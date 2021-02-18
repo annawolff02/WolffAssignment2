@@ -21,46 +21,74 @@ window.onload = function init()
     //
     //(red, green, blue) values for all of the vertices
     colors = [
+        vec3(1, 0, .5), //up pink
         vec3(1, 0, .5),
         vec3(1, 0, .5),
-        vec3(1, 0, .5),
+
+        vec3(1, 0, .6), //down pink
         vec3(1, 0, .6),
         vec3(1, 0, .6),
-        vec3(1, 0, .6),
+
+        vec3(.3, 0, .9), //up blue
+        vec3(.3, 0, .9),
+        vec3(.3, 0, .9),
+
+        vec3(.3, 0, 1), //down blue
         vec3(.3, 0, 1),
         vec3(.3, 0, 1),
-        vec3(.3, 0, 1),
-        vec3(0, .3, .7),
-        vec3(0, .3, .7),
-        vec3(0, .3, .7),
-        vec3(.8, .8, 0),
+
+        vec3(1, .6, 0), //up yellow (orange)
         vec3(1, .6, 0),
-        vec3(.6, .4, 0),
-        vec3(.8, .8, 0),
         vec3(1, .6, 0),
-        vec3(.6, .4, 0)
+
+        vec3(1, .6, 0), //last 3 are mini triangles
+        vec3(1, .6, 0),
+        vec3(1, .8, 0),
+
+        vec3(1, .6, 0), 
+        vec3(1, .6, 0),
+        vec3(1, .8, 0),
+
+        vec3(1, .6, 0), 
+        vec3(1, .6, 0),
+        vec3(1, .8, 0)
+
+        
     ];
 
     // And, add our vertices point into our array of points
     points = [
-        vec2(-.75, -.6 ), //1st triangle
-        vec2( .75, -.6 ), 
-        vec2(0.0,  .75 ),
-        vec2(-.75, .5),
-        vec2(.75, .5),
-        vec2(0, -.8),
-        vec2(-.5, -.4),
-        vec2(.5, -.4),
-        vec2(0, .5),
-        vec2(-.5, .3),
+        vec2(-.75, -.45 ), //up pink
+        vec2( .75, -.45 ), 
+        vec2(0.0,  .85 ),
+
+        vec2(-.75, .45), //down pink
+        vec2(.75, .45),
+        vec2(0, -.85),
+
+        vec2(-.5, -.3), //up blue
+        vec2(.5, -.3),
+        vec2(0, .6),
+
+        vec2(-.5, .3), //down blue
         vec2(.5, .3),
-        vec2(0, -.55),
-        vec2(-.2, -.1),
+        vec2(0, -.6),
+
+        vec2(-.2, -.1), //up yellow (orange)
         vec2(.2, -.1),
-        vec2(0, .3),
+        vec2(0, .2),
+
+        vec2(-.13, 0), //top L mini
+        vec2(-.065, .1),
         vec2(-.2, .1),
+
+        vec2(.13, 0), //top R mini
+        vec2(.065, .1),
         vec2(.2, .1),
-        vec2(0, -.35)
+
+        vec2(-.065, -.1), //bottom mini
+        vec2(.065, -.1),
+        vec2(0, -.2)
     ]
 
 
